@@ -1,0 +1,37 @@
+plugins {
+    id 'java-gradle-plugin'                         
+    id 'maven-publish'                                
+    id 'com.gradle.plugin-publish' version '0.18.0'
+}
+
+group = 'org.xgao' 
+version = '1.0'   
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    mavenCentral()
+}
+
+dependencies {
+    // Use JUnit test framework for unit tests
+    testImplementation 'junit:junit:4.13'
+}
+
+pluginBundle {
+    website = 'https://www.gradle.org/'
+    vcsUrl = 'https://github.com/gradle/greeting-plugin-example'
+    tags = ['org', 'xgao', 'VersionPlugin']
+}
+
+
+gradlePlugin {
+    plugins {
+        simplePlugin {
+            id = 'org.xgao.versionplugin'
+            displayName = "Version Automatical Update Plugin"
+            description = 'This plugin adds some tasks to update the project version.'
+            implementationClass = 'org.xgao.VersionPlugin'
+        }
+    }
+}
