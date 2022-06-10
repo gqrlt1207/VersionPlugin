@@ -1,4 +1,4 @@
-package com.example;
+package io.github.gqrlt1207;
 
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;

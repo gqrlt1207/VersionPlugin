@@ -4,7 +4,7 @@ plugins {
     id 'com.gradle.plugin-publish' version '0.18.0'
 }
 
-group = 'com.example' 
+group = 'io.github.gqrlt1207' 
 version = '1.0.0'   
 
 repositories {
@@ -31,7 +31,7 @@ gradlePlugin {
             id = 'io.github.gqrlt1207.versionplugin'
             displayName = "Version Automatical Update Plugin"
             description = 'This plugin adds some tasks to update the project version.'
-            implementationClass = 'com.example.VersionPlugin'
+            implementationClass = 'git.github.gqrlt1207.VersionPlugin'
         }
     }
 }
