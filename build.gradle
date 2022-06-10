@@ -4,8 +4,8 @@ plugins {
     id 'com.gradle.plugin-publish' version '0.18.0'
 }
 
-group = 'org.xgao' 
-version = '1.0'   
+group = 'com.example' 
+version = '1.0.0'   
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -19,19 +19,19 @@ dependencies {
 }
 
 pluginBundle {
-    website = 'https://www.gradle.org/'
-    vcsUrl = 'https://github.com/gradle/greeting-plugin-example'
-    tags = ['org', 'xgao', 'VersionPlugin']
+    website = 'https://github.com/gqrlt1207/VersionPlugin'
+    vcsUrl = 'https://github.com/gqrlt1207/VersionPlugin'
+    tags = ['com', 'example', 'VersionPlugin']
 }
 
 
 gradlePlugin {
     plugins {
         simplePlugin {
-            id = 'org.xgao.versionplugin'
+            id = 'io.github.gqrlt1207.versionplugin'
             displayName = "Version Automatical Update Plugin"
             description = 'This plugin adds some tasks to update the project version.'
-            implementationClass = 'org.xgao.VersionPlugin'
+            implementationClass = 'com.example.VersionPlugin'
         }
     }
 }
