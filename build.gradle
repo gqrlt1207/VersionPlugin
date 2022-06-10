@@ -31,7 +31,7 @@ gradlePlugin {
             id = 'io.github.gqrlt1207.versionplugin'
             displayName = "Version Automatical Update Plugin"
             description = 'This plugin adds some tasks to update the project version.'
-            implementationClass = 'git.github.gqrlt1207.VersionPlugin.VersionPlugin'
+            implementationClass = 'io.github.gqrlt1207.VersionPlugin'
         }
     }
 }
